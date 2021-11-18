@@ -61,8 +61,7 @@ To run the solution you can use the solution.launch file:
 	- **'robot_controller'** An automated state machine that navigates throught random goals in order to find hints. When a consistent hypothesis is found the 		robot_controller check whether the ID corresponds to the one saved in the parameter server by the hints_server. If the guess is correct the node shuts down,
 	otherwise it continues.
 
-	- <rosparam command="load" file="$(find erl_assignment1)/config/params.yaml" />
-	The launch files also load an empty param called correct_HP0, which will be filled by the hints_server.	
+	- The launch files also load an empty param called correct_HP0, which will be filled by the hints_server.	
 
 ## Custom Nodes
 
