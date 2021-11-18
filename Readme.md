@@ -2,9 +2,6 @@
 
 This package was developed as a solution of the first assignment of the Experimental Robotics Laboratory course of Robotics Engineering held by Professors Buoncompagni Luca and Recchiuto Carmine. The package recreates the ontology of cluedo boardgame, while a robot reach random goals in a 2d space in ros stage.
 
-## Architecure
-
-![](architecture.jpg)
 
 ### Licence
 
@@ -13,6 +10,10 @@ Affiliation: University of Genoa<br />
 Maintainer: Leonardo Spinelli, leonardo.spinelli91@gmail.com**
 
 The assignment1_solution package has been tested under ROS Melodic on Ubuntu 16.04.6 LTS.
+
+## Architecure
+
+![](architecture.jpg)
 
 ### Building from source
 
