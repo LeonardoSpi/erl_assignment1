@@ -70,6 +70,7 @@ To run the solution you can use the solution.launch file:
 	bool request
 	_ _ _
 	float32 x
+	
 	float32 y
  
 * **`hints_server`** ([erl_assignment1/hints])
