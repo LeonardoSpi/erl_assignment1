@@ -1,0 +1,6 @@
+<launch>
+	<node name="stage" pkg="stage_ros" type="stageros" args="$(find assignment1)/world/exercise.world" />
+	
+	<rosparam command="load" file="$(find assignment1_solution)/config/params.yaml" />
+
+</launch>

@@ -1,0 +1,9 @@
+<launch>
+	<node name="stage" pkg="stage_ros" type="stageros" args="$(find assignment1)/world/exercise.world" />
+	<node name="goal_server" pkg="erl_assignment1" type="goal_server.py" />
+	<node name="hints_server" pkg="erl_assignment1" type="hints_server.py" />
+	<node name="robot_controller" pkg="erl_assignment1" type="robot_controller.py" respawn= "true" output="screen" />
+	
+	
+	<rosparam command="load" file="$(find erl_assignment1)/config/params.yaml" />
+</launch>
