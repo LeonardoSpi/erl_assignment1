@@ -38,7 +38,7 @@ Check files permission with:
 
 To run the solution you can use the solution.launch file:
 
-	roslaunch assignment1_solution solution.launch
+	roslaunch erl_assignment1 erl_assignment1.launch
 
 ## Launch files
 
