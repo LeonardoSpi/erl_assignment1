@@ -65,9 +65,17 @@ To run the solution you can use the solution.launch file:
 
 #### Services
 
-* **`goal_generator`** ([assignment1_solution/goal])
+* **`goal_server`** ([assignment1_solution/goal])
 
-	Request goal
+	bool request
+	---
+	float32 x
+	float32 y
  
+* **`hints_server`** ([assignment1_solution/hints])
 
+	bool request
+	---
+	string hint
+	
 
