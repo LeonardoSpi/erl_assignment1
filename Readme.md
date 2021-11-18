@@ -52,9 +52,11 @@ To run the solution you can use the solution.launch file:
 
 	- **'stage'** Spawn the robot in the ros stage environment.
 
-	- **'hints_server'** Start a service server node which will generate a random goal between (-6,6) when requested.
+	- **'hints_server'** Start a service server node which will associate IDs to different hints source from a list picked randomly. When a consistent hypothesis is
+	randomly generated with three hints from the same source ID, the ID is saved as a rosparam in the parameter server. When the hints_server receives a request it
+	answers with a string made by "ID, who/what/where, hint".
 
-	- **'goal_server'** Start service client that asks the server for a goal and then commands the robot to reach it. Respawn and output are set to True, so that the once a goal is reached the client will send another request and the output will be printed to screen.
+	- **'goal_server'** Start a service server for random goals.
 
 	- **'robot_controller'** Start service client that asks the server for a goal and then commands the robot to reach it. Respawn and output are set to True, so that the once a goal is reached the client will send another request and the output will be printed to screen.
 
