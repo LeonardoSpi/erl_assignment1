@@ -4,7 +4,7 @@ This package was developed as a solution of the first assignment of the Experime
 
 ## Architecure
 
-![](architecture.png)
+![](architecture.jpg)
 
 ### Licence
 
