@@ -115,11 +115,9 @@ def control():
 
         period_x = abs(2*distance_x) # Since the velocities in x and y will be computed with specific 
         period_y = abs(2*distance_y) # law of motions, we need to compute periods for both
-                     # which depend on the distance
-
-    #print("Goal generated is x: %f, y: %f" %(resp.x, resp.y))     # Print informations about goal coordinates
-    #print("Distances are x: %f, y: %f" %(distance_x, distance_y)) # and distances
-        print("Going to a room... please wait...\n") # and distances
+                     		     # which depend on the distance
+		
+        print("Going to a room... please wait...\n")
 
         t = rospy.get_time() # Get the time and save it in the variable t
 
