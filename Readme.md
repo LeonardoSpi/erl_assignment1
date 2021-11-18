@@ -73,6 +73,7 @@ To run the solution you can use the solution.launch file:
 	
 	float32 y
  
+ 
 * **`hints_server`** ([erl_assignment1/hints])
 
 	bool request
