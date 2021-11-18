@@ -9,7 +9,7 @@ This package was developed as a solution of the first assignment of the Experime
 Affiliation: University of Genoa<br />
 Maintainer: Leonardo Spinelli, leonardo.spinelli91@gmail.com**
 
-The assignment1_solution package has been tested under ROS Melodic on Ubuntu 16.04.6 LTS.
+The erl_assignment1 package has been tested under ROS Melodic on Ubuntu 16.04.6 LTS.
 
 ## Architecture
 
@@ -20,7 +20,7 @@ The assignment1_solution package has been tested under ROS Melodic on Ubuntu 16.
 To build from source, clone the latest version from this repository into your catkin workspace and compile the package using:
 
 	cd catkin_workspace/src
-	git clone https://github.com/LeonardoSpi/assignment1_solution
+	git clone https://github.com/LeonardoSpi/erl_assignment1
 	cd ../
 	catkin_make
 
