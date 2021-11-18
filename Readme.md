@@ -67,17 +67,17 @@ To run the solution you can use the solution.launch file:
 
 * **`goal_server`** ([erl_assignment1/goal])
 
-	bool request
+		bool request
 	_ _ _
-	float32 x
+		float32 x
 	
-	float32 y
+		float32 y
  
  
 * **`hints_server`** ([erl_assignment1/hints])
 
-	bool request
+		bool request
 	_ _ _
-	string hint
+		string hint
 	
 
