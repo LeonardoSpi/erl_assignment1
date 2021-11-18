@@ -63,7 +63,7 @@ To run the solution you can use the solution.launch file:
 
 	- The launch files also loads an empty param called correct_HP0, which will be filled by the hints_server.	
 
-#### Services
+### Services
 
 * **`goal_server`** ([erl_assignment1/goal])
 
