@@ -65,7 +65,7 @@ To run the solution you can use the solution.launch file:
 
 ### Services
 
-* **`goal_server`** ([erl_assignment1/goal])
+* **`goal_generator`** ([erl_assignment1/goal])
 
 		bool request
 	_ _ _
@@ -74,7 +74,7 @@ To run the solution you can use the solution.launch file:
 		float32 y
  
  
-* **`hints_server`** ([erl_assignment1/hints])
+* **`hints_generator`** ([erl_assignment1/hints])
 
 		bool request
 	_ _ _
