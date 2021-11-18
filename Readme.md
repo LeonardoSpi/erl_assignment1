@@ -13,13 +13,13 @@ The erl_assignment1 package has been tested under ROS Melodic on Ubuntu 16.04.6 
 
 ## Architecture
 
-![](behaviour.png)
+![](architecture.jpg)
 
 The main node is **robot_controller** which works as a FSM. The controller asks to the **goal_server** for random positions to acquire in the ROS stage environment. The request is a bool while the response from the server comes as a couple of float describing x and y positions. The idea is to simulate the player of Cluedo reaching different rooms to find hints, in this case the rooms are exploited as random positions. Once a goal is reached, the robot_controller retrieves a hint from the **hints_server**. The hint consists in a string which contains a prefix with the identifier. When the robot controller has received three hints with the same identifier, it checks if the hypothesis formulated with those identifiers is consistent. If the hypothesis is consistent the robot_controller commands the robot to go to x=0 and y=0 position, then it asks the oracle (parameter server) whether the hypothesis is correct.
 
 ## Behaviour
 
-![](architecture.jpg)
+![](behaviour.png)
 
 ### Building from source
 
