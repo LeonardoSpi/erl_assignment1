@@ -23,7 +23,7 @@ The main node is **robot_controller** which works as a FSM. The controller asks 
 
 ## Video
 
-![](name-of-giphy.gif)
+![](erl_assignment1.gif)
 
 ### Building from source
 
