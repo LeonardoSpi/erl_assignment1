@@ -9,7 +9,7 @@ import math # Needed for pi and cos
 from time import sleep
 
 vel_pub = rospy.Publisher('/cmd_vel',Twist,queue_size=1000) # Define the node as a publisher on the topic                                    
-							     # /cmd_vel with a message of 
+							    # /cmd_vel with a message of 
                                                             # type geometry_msgs/Twist
 
 client = rospy.ServiceProxy('/goal_generator', goal) #Define the node as a client for the service
