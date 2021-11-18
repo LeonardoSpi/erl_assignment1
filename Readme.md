@@ -2,6 +2,8 @@
 
 This package was developed as a solution of the first assignment of the Experimental Robotics Laboratory course of Robotics Engineering held by Professors Buoncompagni Luca and Recchiuto Carmine. The package recreates the ontology of cluedo boardgame, while a robot reach random goals in a 2d space in ros stage.
 
+## Architecure
+
 ![](architecture.png)
 
 ### Licence
