@@ -25,6 +25,8 @@ The main node is **robot_controller** which works as a FSM. The controller asks 
 
 ![](erl_assignment1.gif)
 
+link : https://www.youtube.com/watch?v=WWTEK2aNm_c&ab_channel=LeonardoSpinelli
+
 ### Building from source
 
 To build from source, clone the latest version from this repository into your catkin workspace and compile the package using:
