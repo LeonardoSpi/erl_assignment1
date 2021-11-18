@@ -42,13 +42,15 @@ To run the solution you can use the solution.launch file:
 
 ## Launch files
 
-* **solution.launch** This launch file will starts 3 nodes: stage, server, client.
+* **erl_assignment1.launch** This launch file will starts 4 nodes: stage, hints_server, goal_server, robot_controller.
 
 	- **'stage'** Spawn the robot in the ros stage environment.
 
-	- **'server'** Start a service server node which will generate a random goal between (-6,6) when requested.
+	- **'hints_server'** Start a service server node which will generate a random goal between (-6,6) when requested.
 
-	- **'client'** Start service client that asks the server for a goal and then commands the robot to reach it. Respawn and output are set to True, so that the once a goal is reached the client will send another request and the output will be printed to screen.
+	- **'goal_server'** Start service client that asks the server for a goal and then commands the robot to reach it. Respawn and output are set to True, so that the once a goal is reached the client will send another request and the output will be printed to screen.
+
+	- **'robot_controller'** Start service client that asks the server for a goal and then commands the robot to reach it. Respawn and output are set to True, so that the once a goal is reached the client will send another request and the output will be printed to screen.
 
 ## Custom Nodes
 
