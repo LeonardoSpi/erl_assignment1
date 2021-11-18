@@ -88,13 +88,17 @@ To run the solution you can use the solution.launch file:
 	
 ### System's features
 
-
+The system consist of an automated state machines that decides whether to continue searching for hints or make an hypothesis to the Oracle.
+The searching part is obtained by a random goal generator service that simulate the robot reaching different rooms.
+The hints are randomly associated to IDs, this allow the game to be different everytime the hints server is executed.
+The ros stage visual allow the user to have a feedback of what is happening.
 
 ### System's limitation
 
-
+The rooms are just random x and y coordinates in the 2D space.
+The correct hypothesis is always the first consistent hypothesis that is randomly generated.
 
 ### Technical improvements
 
-
+Using gazebo with an actual map to simulate the room navigation part.
 
