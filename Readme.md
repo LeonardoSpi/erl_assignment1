@@ -15,7 +15,7 @@ The erl_assignment1 package has been tested under ROS Melodic on Ubuntu 16.04.6 
 
 ![](architecture.jpg)
 
-The main node is **robot_controller** which works as a FSM. The controller asks to the goal_server for random positions to acquire in the ros stage environment. The request is a bool while the response from the server comes as a couple of float describing x and y positions. The idea is to simulate the player of cluedo reaching different rooms to find hints, in this case the rooms are exploited as random positions. In the meanwhile, as the hints_server is starts, it generats a random association between hints and IDs. 
+The main node is **robot_controller** which works as a FSM. The controller asks to the **goal_server** for random positions to acquire in the ros stage environment. The request is a bool while the response from the server comes as a couple of float describing x and y positions. The idea is to simulate the player of cluedo reaching different rooms to find hints, in this case the rooms are exploited as random positions. Once a goal is reached, the robot_controller retrives an hint from the **hints_server**. 
 
 ### Building from source
 
