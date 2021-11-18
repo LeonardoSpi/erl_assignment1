@@ -19,7 +19,7 @@ The main node is **robot_controller** which works as a FSM. The controller asks 
 
 ## Behaviour
 
-![](behaviour.png)
+![](behaviour.jpg)
 
 ### Building from source
 
