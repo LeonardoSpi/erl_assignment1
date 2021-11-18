@@ -54,11 +54,12 @@ To run the solution you can use the solution.launch file:
 
 	- **'hints_server'** Start a service server node which will associate IDs to different hints source from a list picked randomly. When a consistent hypothesis is
 	randomly generated with three hints from the same source ID, the ID is saved as a rosparam in the parameter server. When the hints_server receives a request it
-	answers with a string made by "ID, who/what/where, hint".
+	answers with a string made by "ID, who/what/where, hint", the hint is deleted from the list to prevent the user to pick it multiple times.
 
 	- **'goal_server'** Start a service server for random goals.
 
-	- **'robot_controller'** Start service client that asks the server for a goal and then commands the robot to reach it. Respawn and output are set to True, so that the once a goal is reached the client will send another request and the output will be printed to screen.
+	- **'robot_controller'** An automated state machine that navigates throught random goals in order to find hints. When a consistent hypothesis is found the 		robot_controller check whether the ID corresponds to the one saved in the parameter server by the hints_server. If the guess is correct the node shuts down,
+	otherwise it continues.
 
 ## Custom Nodes
 
