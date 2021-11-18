@@ -21,7 +21,7 @@ To build from source, clone the latest version from this repository into your ca
 
 	cd catkin_workspace/src
 	git clone https://github.com/LeonardoSpi/erl_assignment1
-	cd ../
+	cd ..
 	catkin_make
 
 Remember to make scripts executable, in the scripts folder use the following commands:
