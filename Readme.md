@@ -63,50 +63,6 @@ To run the solution you can use the solution.launch file:
 
 	- The launch files also loads an empty param called correct_HP0, which will be filled by the hints_server.	
 
-## Custom Nodes
-
-### Server
-
-Waits for requests in order to generate random x and y coordinates in the interval (-6, 6)
-
-#### Subscribed Topics
-
-None
-
-#### Published Topics
-
-None
-
-#### Services
-
-* **`goal_generator`** ([assignment1_solution/goal])
-
-	Returns a random goal in x and y coordinates in the interval (-6, 6). The service takes as a request a 		bool, if it is True it generates the random goal responding with two floats: x and y. If the request is 	False than the goal is set to x=0, y=0, the robot comes back to the starting position.
-
-### Client
-
-Asks to the server for a random goal. Moves the robot using a specific law of motion which is described in the graphs below.
-
-![](it.plot.png)
-
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Displacement function
-- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) Velocity function
-- ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) Acceleration function
-
-The function has been developed with the intent to have 0 initial and final velocities and accelerations for both axis.
-
-#### Subscribed Topics
-
-* **`/odom`** ([nav_msgs.msg/Odometry])
-
-	The current position of the robot.
-
-#### Published Topics
-
-* **`/cmd_vel`** ([geometry_msgs.msg/Twist])
-
-	The current robot velocities.
-
 #### Services
 
 * **`goal_generator`** ([assignment1_solution/goal])
