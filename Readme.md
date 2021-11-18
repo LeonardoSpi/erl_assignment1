@@ -11,7 +11,7 @@ Maintainer: Leonardo Spinelli, leonardo.spinelli91@gmail.com**
 
 The assignment1_solution package has been tested under ROS Melodic on Ubuntu 16.04.6 LTS.
 
-## Architecure
+## Architecture
 
 ![](architecture.jpg)
 
